@@ -1,23 +1,590 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/rental-business-loan-guide"
+      },
+      "headline": "2026년 주택임대사업자대출 규제 분석 및 금리 한도 비교 가이드",
+      "image": [
+        "https://yourdomain.com/rental-business-loan-banner.jpg"
+      ],
+      "datePublished": "2026-04-20T09:00:00+09:00",
+      "dateModified": "2026-06-27T09:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "부동산 금융 정책 연구소"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "부동산 금융 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourdomain.com/logo.png"
+        }
+      },
+      "description": "2026년 최신 임대사업자대출 규제와 한도, RTI 산정 기준을 다룹니다. LTV 한도 비교, 이자 계산 및 만기 연장 제한 대책을 제시하며, 금리 한도 계산기, 온라인 다이렉트 상담, 연령 및 신용등급별 예상 한도 분석을 수록했습니다."
+    }
+    </script>
+    
+    <style>
+        html, body, div, p, span, h1, h2, h3, h4, h5, h6, ul, li, ol, table, tr, th, td, form, input, select, textarea, button, section, header, nav, footer, label, a { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        :root {
+            --primary-color: #1e3a8a; 
+            --secondary-color: #0d9488; 
+            --accent-color: #f97316;
+            --background-color: #f8fafc; 
+            --card-background: #ffffff;
+            --text-color: #1e293b;
+            --light-border: #e2e8f0;
+        }
+
+        body { 
+            font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; 
+            line-height: 1.9; 
+            background: var(--background-color); 
+            color: var(--text-color);
+            padding: 20px 0;
+        }
+
+        .container { 
+            max-width: 1024px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+
+        header, section, footer, .card { 
+            background: var(--card-background); 
+            border-radius: 16px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+            padding: 40px; 
+            margin-bottom: 30px;
+        }
+
+        header {
+            text-align: center;
+            border-top: 6px solid var(--primary-color);
+        }
+
+        h1 { 
+            color: var(--primary-color); 
+            font-size: 2.2em; 
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        h2 { 
+            color: var(--primary-color); 
+            font-size: 1.6em; 
+            margin-top: 40px; 
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+            font-weight: 700;
+        }
+
+        h3 { 
+            color: var(--secondary-color); 
+            font-size: 1.3em; 
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            color: #334155;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+            color: #334155;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0;
+            margin: 30px 0; 
+            border: 1px solid var(--light-border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+        }
+
+        th, td { 
+            border-bottom: 1px solid var(--light-border); 
+            border-right: 1px solid var(--light-border);
+            padding: 16px; 
+            text-align: left; 
+            font-size: 0.95em;
+        }
+
+        th:last-child, td:last-child {
+            border-right: none;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        th { 
+            background: var(--primary-color); 
+            color: #ffffff; 
+            font-weight: 700;
+            border-color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .btn-cta {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 18px 40px;
+            background: var(--accent-color);
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.15em;
+        }
+
+        .btn-cta:hover {
+            background: #ea580c;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(249, 115, 22, 0.4);
+        }
+
+        form label { 
+            display: block; 
+            margin-top: 20px; 
+            margin-bottom: 8px; 
+            font-weight: 700; 
+            color: var(--primary-color);
+            font-size: 0.95em;
+        }
+
+        form input[type="text"], 
+        form input[type="tel"], 
+        form input[type="number"], 
+        form select, 
+        form textarea {
+            width: 100%; 
+            padding: 14px; 
+            border: 1px solid var(--border-color); 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            transition: all 0.3s;
+            font-size: 1em;
+            background-color: #f8fafc;
+            color: var(--text-color);
+        }
+
+        form input:focus, 
+        form select:focus, 
+        form textarea:focus {
+            border-color: var(--secondary-color);
+            background-color: #ffffff;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15);
+        }
+
+        .highlight-box {
+            background: #f0fdf4; 
+            border-left: 6px solid var(--secondary-color);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #115e59;
+            font-weight: 600;
+        }
+        
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            font-weight: 700;
+            padding: 10px 20px;
+            border: 1px solid var(--primary-color);
+            border-radius: 30px;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+        
+        .external-links a {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1px dashed var(--secondary-color);
+            transition: all 0.3s;
+        }
+
+        .external-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .chart-container {
+            background: #f1f5f9;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .chart-bar-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .chart-bar-wrapper:last-child {
+            margin-bottom: 0;
+        }
+
+        .chart-label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #475569;
+            font-size: 0.9em;
+        }
+
+        .chart-bar-bg {
+            background: #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 32px;
+            position: relative;
+        }
+
+        .chart-bar-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.85em;
+            border-radius: 8px;
+            transition: width 1s ease-in-out;
+        }
+
+        .fill-regulated {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+        }
+
+        .fill-non-regulated {
+            background: linear-gradient(90deg, #0d9488, #14b8a6);
+        }
+
+        .fill-commercial {
+            background: linear-gradient(90deg, #f97316, #fb923c);
+        }
+        
+        @media(max-width: 768px) {
+            h1 { font-size: 1.7em; }
+            h2 { font-size: 1.3em; }
+            header, section, footer, .card { padding: 20px; }
+            .btn-cta { width: 100%; padding: 15px 20px; font-size: 1em; }
+            nav ul { justify-content: stretch; }
+            nav li { width: 48%; }
+            nav a { display: block; text-align: center; padding: 8px 10px; font-size: 0.8em; }
+            th, td { padding: 10px; font-size: 0.8em; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>2026년 주택임대사업자대출 규제 및 금리 한도 상세 분석 가이드</h1>
+            <p style="text-align: center; font-size: 1.1em; color: #475569; margin-top: 10px;">금융감독원 및 국토교통부 고시 기준 최신 부동산 대출 한도 규제와 상환 조건 안내</p>
+            <a href="#consultation-form" class="btn-cta">실시간 대출 한도 및 우대 금리 비교 상담 신청하기</a>
+        </header>
+
+        <nav aria-label="메인 내비게이션">
+            <ul>
+                <li><a href="#regulatory-landscape">2026년 대출 규제</a></li>
+                <li><a href="#business-vs-personal">임대대출의 핵심</a></li>
+                <li><a href="#market-response">커뮤니티 및 여론</a></li>
+                <li><a href="#optimization-strategy">금리 인하 가이드</a></li>
+                <li><a href="#comparison-data">종류별 비교표</a></li>
+                <li><a href="#authority-links">공식 신뢰 기관</a></li>
+                <li><a href="#consultation-form">비대면 견적 신청</a></li>
+            </ul>
+        </nav>
+
+        <section id="regulatory-landscape">
+            <h2>2026년 주택임대사업자대출 규제 현황과 부동산 시장의 변화</h2>
+            <p>
+                대한민국 부동산 시장에서 주택을 매입하여 세를 놓는 임대 사업을 영위하는 이들에게 금융 조달은 사업의 존폐를 결정짓는 핵심적인 요소입니다. 2026년 상반기, 금융감독원과 관련 기관들이 발표한 가계부채 관리방안에 따라 주택임대사업자대출에 대한 심사 요건이 전례 없이 강화되었습니다. 특히 수도권 및 주요 규제지역의 아파트 담보를 기반으로 일어나는 대출의 경우, 신규 진입뿐만 아니라 기존에 일어난 대출의 만기 연장 여부까지 원칙적으로 불허되는 수준에 직면하면서 다주택자와 임대사업자들의 셈법이 복잡해지고 있습니다.
+            </p>
+            <p>
+                정부의 규제 강화 기조에 따라 시중 은행들은 연간 대출 증가율 가이드라인을 엄격히 준수하고 있으며, 이에 따른 연초 대출 총량 소진 속도가 빨라져 하반기로 갈수록 자금 확보가 극도로 어려워지고 있습니다. 이제는 예전처럼 단순히 영업점에 방문해 담보 가치만으로 돈을 빌리던 시절은 지나갔습니다. 자산 가치 평가 기준인 LTV는 물론이며, 임대업 이자상환비율인 RTI 수치가 대출 승인에 결정적인 지표로 작용하고 있습니다.
+            </p>
+            
+            <div class="highlight-box">
+                <p>주요 고시 요약: 2026년 4월 17일부터 시행된 제도에 따라, 서울을 포함한 수도권 및 규제지역의 아파트 담보대출은 다주택자 및 사업자 한도 내에서 만기 연장이 엄격히 통제됩니다. 세입자가 거주 중인 경우 임대차 계약 종료일까지 한시적으로 유예되지만, 원칙적인 상환 압박이 강해지므로 사전에 철저한 금융 포트폴리오를 점검해야 합니다.</p>
+            </div>
+
+            <p>
+                수도권 아파트뿐만 아니라 다세대, 빌라, 오피스텔 등 다양한 부동산의 임대 가치 하락과 고금리 기조가 맞물리면서, 월세 수입 대비 대출 이자의 감당 비중을 평가하는 RTI 기준에 미달해 대출 연장이 거부되는 사례가 속출하고 있습니다. 이러한 규제 풍선효과로 인해 한도 확보를 위한 우회 대출을 알아보는 수요도 있으나, 정부는 용도 외 유용 검증 기준을 최고 수준으로 상향하여 위반 적발 시 즉각 대출을 회수하고 10년간 금융 거래를 제한하는 강력한 제재 조치를 펼치고 있습니다.
+            </p>
+        </section>
+
+        <section id="business-vs-personal">
+            <h2>가계대출과 임대사업자대출의 차이점 및 RTI 계산기 적용 원리</h2>
+            <p>
+                많은 분들이 가계 일반 주택담보대출과 임대사업자대출의 차이점을 정확히 인지하지 못해 낭패를 보곤 합니다. 가계대출은 차주의 소득을 기준으로 상환 능력을 평가하는 DSR 규제가 직접 작용하는 반면, 기업 여신에 해당하는 주택 임대 대출은 해당 부동산에서 발생하는 임대 소득과 연간 대출 이자 비용을 대조하는 RTI 비율이 핵심 잣대입니다.
+            </p>
+            <p>
+                RTI 즉, 임대업 이자상환비율은 연간 임대소득을 연간 예상 이자 비용으로 나누어 산정하는 수치입니다. 주거용 임대주택의 경우 규제지역은 1.5배, 비규제지역은 1.25배를 상회해야 대출이 승인됩니다. 이는 매월 얻는 임대료 수입이 대출 이자 지출보다 최소 1.25배에서 1.5배 이상 많아야 한다는 뜻입니다. 만약 금리가 가파르게 인상되면 이자 비용 분모가 증가하여 RTI 수치는 하락하게 되고, 결과적으로 기존에 잘 나오던 한도 금액도 줄어들거나 연장 심사에서 상환 요구를 받게 됩니다.
+            </p>
+            <p>
+                예를 들어, 평가 가격 8억 원의 비규제지역 아파트를 담보로 대출을 신청할 때, 연간 예상되는 이자 비용이 2천만 원이라면 최소 연간 임대소득은 2천5백만 원 이상이어야 1.25배 기준을 채워 대출 진행이 가능합니다. 이 복잡한 비율을 산출하기 위해 시중에 제공되는 자금 계산기 또는 전용 금융 앱 프로그램을 구동하여 사전에 직접 예상 견적을 모의 산출해 보는 작업이 필요합니다.
+            </p>
+            
+            <div class="chart-container">
+                <div class="chart-bar-wrapper">
+                    <span class="chart-label">규제지역 임대주택 요구 RTI 비율 (기준선: 1.5배 이상 필요)</span>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill fill-regulated" style="width: 100%;">1.50배 이상 통과</div>
+                    </div>
+                </div>
+                <div class="chart-bar-wrapper">
+                    <span class="chart-label">비규제지역 임대주택 요구 RTI 비율 (기준선: 1.25배 이상 필요)</span>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill fill-non-regulated" style="width: 83.3%;">1.25배 이상 통과</div>
+                    </div>
+                </div>
+                <div class="chart-bar-wrapper">
+                    <span class="chart-label">상가 및 일반 임대사업 요구 RTI 비율 (기준선: 1.25배 이상 필요)</span>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill fill-commercial" style="width: 83.3%;">1.25배 이상 통과</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="market-response">
+            <h2>대출 전문가들이 분석하는 금융 환경과 부동산 온라인 여론의 흐름</h2>
+            <p>
+                최근 시장 참여자들은 네이버 카페를 비롯해 구글 검색 트렌드, 그리고 유튜브 재테크 전문 방송 등에서 대출 시장의 엄혹한 현실에 대한 논의를 활발히 이어가고 있습니다. 특히 주택 매입 단계에서 내돈내산 형태로 자금을 전부 마련하지 못하는 한 임대사업자대출 조건이 얼마나 까다로워졌는지에 대한 성토의 목소리가 높습니다.
+            </p>
+            <p>
+                유명 온라인 포럼인 디시인사이드 부동산 갤러리나 보배드림 부동산 게시판, 그리고 젊은 세대 자산가들이 밀집한 펨코 및 에펨코리아 재테크 채널 등에서는 이번 대출 한도 축소로 인해 전세 보증금 반환 의무를 다하지 못하는 역전세 폭탄 우려에 대해 실시간으로 토론이 전개됩니다. 트위터나 인스타그램, 페이스북 등 소셜 미디어 플랫폼에는 정부의 긴축적 대출 기조를 비판하거나, 반대로 갭투자를 제어해 집값을 안정시키려는 취지에는 찬성한다는 분분한 해석의 글들이 빠르게 확산되고 있습니다.
+            </p>
+            <p>
+                이러한 복잡다단한 시장 구도 속에서, 대출 수요자들은 더 낮은 금리를 찾아다니기 위해 토스, 카카오톡 채널 상담, 혹은 다양한 핀테크 플랫폼 어플 서비스를 적극적으로 가동하여 비교 경쟁력을 확보하려 합니다. 인공지능 자문 솔루션인 제미나이 혹은 오픈AI의 챗지피티 모델에 세법 해석과 소득 대비 최적의 상환 방식을 질의하는 영리한 투자자들도 크게 늘어났습니다. Gemini 및 ChatGPT와 같은 혁신적인 AI 도구를 사용해 금융 가이드를 얻는 행위는 이제 똑똑한 자산 관리의 핵심 경쟁력으로 안착했습니다.
+            </p>
+        </section>
+
+        <section id="optimization-strategy">
+            <h2>이율이 저렴한곳을 찾아 이자 비용을 획기적으로 낮추는 금융 전략</h2>
+            <p>
+                임대 사업 소득의 가장 큰 지출 항목인 이자를 단 0.1퍼센트 포인트라도 줄이는 것이 사업 수익성을 확보하는 가장 본질적인 지름길입니다. 신규 상품에 가입할 때 단순히 기존 대형 시중은행 브랜드 신뢰도만 보고 창구를 찾아가 가입하기보다는, 지점 방문 없이 온라인으로 즉시 금리를 깎아주는 다이렉트 전용 상품을 찾아보는 것이 유리합니다.
+            </p>
+            <p>
+                각 은행이 정기적으로 개설하는 우대 혜택 및 금리 할인 이벤트를 적시 적소에 적용받는 기술이 필요합니다. 해당 금융사의 신용카드 사용 실적을 채우거나 급여 또는 임대료 이체 계좌 지정, 자동이체 등록 개수 충족, 적금 신규 가입 등의 거래 실적 요건을 조율하면 가산금리를 대폭 낮출 수 있습니다. 또한 금융 플랫폼이 제공하는 비대면 비교 컨설팅 서비스를 이용해 수많은 시중 은행 중 조건이 제일 싼곳을 선별해내는 절차를 진행해야 합니다.
+            </p>
+            <p>
+                자금이 필요한 시점에 다수의 전문 금융 대행 업체나 정식 등록된 대출 중개 사이트를 비교하면, 상담 과정에서 간헐적으로 제안하는 모바일 상품권 지급, 소정의 사은품 증정 등 추가적인 부가 혜택도 챙길 수 있습니다. 단, 정상적인 한도 조회 및 실행 시 금전적 사은품 약속을 악용해 선수수료를 요구하거나 과도한 현금지원을 앞세운 불법 미등록 대행사들의 사기 행태에 대해서는 구글링이나 정부 공식 금융 채널 등을 통해 이중 삼중으로 체크하여 각별히 주의해야 합니다.
+            </p>
+        </section>
+
+        <section id="comparison-data">
+            <h2>2026년 담보 자산별 임대사업자대출 조건 및 한도 종합 비교</h2>
+            <p>
+                자신이 임대 사업 용도로 매입하려는 타겟 부동산의 종류에 따라 적용되는 심사 방식과 최장 만기 구조, 평균 적용 금리는 천차만별입니다. 각 상품의 장단점과 예상되는 금액 범위를 명확하게 알고 비교해 두어야 불필요한 비용 낭비를 사전에 차단할 수 있습니다.
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분 항목</th>
+                        <th>아파트 (Metropolitan)</th>
+                        <th>오피스텔 / 도시형 생활주택</th>
+                        <th>일반 근린상가 / 상가주택</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>적용 LTV 비율</td>
+                        <td>수도권 최대 0%에서 30% 수준 (매우 강력한 통제)</td>
+                        <td>감정평가액 대비 최대 60%에서 70% 범위 적용</td>
+                        <td>은행 평가 조건에 따라 최대 70%에서 80% 내외</td>
+                        </tr>
+                    <tr>
+                        <td>요구 RTI 통과율</td>
+                        <td>규제지역 기준 1.5배 이상 적용</td>
+                        <td>주거용 사용 시 1.5배, 업무용 시 1.25배 적용</td>
+                        <td>비주거 시설 기준 평균 1.25배 이상 달성 필요</td>
+                    </tr>
+                    <tr>
+                        <td>예상 평균 금리 수준</td>
+                        <td>연 4.1%에서 연 5.4% 범위 형성</td>
+                        <td>연 4.5%에서 연 5.8% 수준 분포</td>
+                        <td>연 4.8%에서 연 6.2% 가산금리 적용</td>
+                    </tr>
+                    <tr>
+                        <td>대출 상환 및 만기</td>
+                        <td>만기 원칙적 금지 및 1년 단위 초단기 심사 연장</td>
+                        <td>3년에서 5년 단위 만기 일시 혹은 분할 상환 혼용</td>
+                        <td>최장 5년 단위 거치식 만기일시 상환 비율 높음</td>
+                    </tr>
+                    <tr>
+                        <td>주요 특징 및 단점</td>
+                        <td>수도권 아파트 매각 유도를 위한 한도 압박 극대화</td>
+                        <td>DSR 규제 우회 가능하나 가액 평가 편차가 큰 편</td>
+                        <td>공실률에 따른 RTI 하락 리스크 및 공실 방지 노력 필수</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>
+                표에 명시된 평균 수준의 자금 요건과 예상 비용 한도는 개별 차주의 소득 유무, 무사고 거래 신용점수, 사업자 등록 유형에 따라 세부적인 조정폭이 큽니다. 따라서 단순 추정치에 머무르지 않고 가용한 여러 금융 경로를 동시에 열어두고 최적의 금리를 수시로 대조하는 것이 권장됩니다.
+            </p>
+        </section>
+
+        <section id="optimization-checklist">
+            <h2>대출 체류 기간 및 심사 지연 요소를 제거하기 위한 필수 서류 자가 진단 리스트</h2>
+            <p>
+                대출 신청을 원활히 마쳐 최적의 조건으로 승인을 받아내기 위해서는 은행 심사역이 납득할 만한 객관적인 증빙 서류를 정밀하게 사전 제출해야 합니다. 서류 준비 미비는 한도 산정 지연과 부결의 결정적인 귀책 사유가 됩니다.
+            </p>
+            <ul>
+                <li>개인사업자등록증명 및 주택임대사업자 등록증 (시군구청 및 세무서 발행분 교차 지참 필수)</li>
+                <li>임대 대상 주택의 확정일자부 임대차 계약서 원본 및 전입세대확인서 (공실의 경우 예상 계약서 마련)</li>
+                <li>세무서 직인이 찍힌 소득금액증명원 및 종합소득세 신고서 (사업 소득 및 근로 소득 일괄 증빙 목적)</li>
+                <li>대상 물건의 등기사항전부증명서 및 토지이용계획확인서 (저당권 설정 현황 확인용)</li>
+                <li>국세 및 지방세 완납증명서 (체납 이력이 단 1건이라도 존재할 경우 심사가 즉시 보류되므로 최우선 정리 요망)</li>
+            </ul>
+        </section>
+
+        <section id="authority-links" class="external-links">
+            <h2>국민 평생 금융 안전판 구축을 위한 공식 신뢰 기관 참고 링크</h2>
+            <p>
+                가장 신뢰성 높고 공인된 기관들의 공식 고시 자료와 금융 규제 시행령을 확인하여 안전하게 의사결정을 하시기 바랍니다. 본 채널은 외부 비정식 기관의 허위 정보를 일절 배제하고 공신력 높은 원천 자료를 안내해 드립니다.
+            </p>
+            <ul>
+                <li><a href="https://loanforbusinessw.koreahankang.com" target="_blank" rel="nofollow noopener">부동산 자산 분석 센터 (Reliabledone 금융 가이드)</a></li>
+                <li><a href="https://namu.wiki/w/%EC%A3%BC%ED%83%9D%EC%9E%84%EB%8C%80%EC%82%AC%EC%97%85%EC%9E%90" target="_blank" rel="nofollow noopener">나무위키 공식 주택임대사업자 제도 백과사전</a></li>
+                <li><a href="https://www.fss.or.kr" target="_blank" rel="nofollow noopener">금융감독원 공식 소비자 지원 포털 및 금융 가이드 사이트</a></li>
+                <li><a href="https://www.law.go.kr" target="_blank" rel="nofollow noopener">법제처 국가법령정보센터 공식 대출 규제 관련 법규 조회 사이트</a></li>
+                <li><a href="https://www.molit.go.kr" target="_blank" rel="nofollow noopener">국토교통부 주거안정 정책 및 임대사업자 등록 지원 공식 홈</a></li>
+            </ul>
+        </section>
+
+        <section id="consultation-form">
+            <h2 id="consultation-form-anchor">주택임대사업자대출 비대면 한도 우대 조건 무료 맞춤 상담 신청</h2>
+            <p style="text-align: center; color: #475569; margin-bottom: 25px;">
+                보유 주택 수와 월 임대료, 원리금 상환 희망 기간 등을 기입하시면, 협약된 시중 전문 금융사의 맞춤형 한도와 우대 할인 금리 견적을 상세하게 산출하여 신속하게 비대면 피드백을 안내해 드립니다.
+            </p>
+            
+            <form action="/submit-rental-quote" method="POST" style="max-width:800px; margin:0 auto; padding: 30px; border: 2px dashed var(--secondary-color); border-radius: 12px; background-color: #fcfdfd;">
+                <label for="owner-name">신청인 성명 (필수)</label>
+                <input type="text" id="owner-name" name="owner_name" required placeholder="예시: 홍길동">
+
+                <label for="owner-phone">비대면 수신 연락처 (필수)</label>
+                <input type="tel" id="owner-phone" name="owner_phone" required placeholder="010-XXXX-XXXX 형식으로 입력">
+
+                <label for="property-type">임대용 자산 대상 종류 (필수)</label>
+                <select id="property-type" name="property_type" required>
+                    <option value="">-- 보유하신 담보 자산의 종류를 선택해 주세요 --</option>
+                    <option value="apartment-regulated">수도권 아파트 (규제지역 대상)</option>
+                    <option value="apartment-non-regulated">비수도권 및 지방 아파트 (일반지역)</option>
+                    <option value="officetel">주거용/업무용 오피스텔 및 생활숙박시설</option>
+                    <option value="commercial-bldg">일반 상가, 꼬마 빌딩 및 주상복합</option>
+                    <option value="multi-house">다세대 주택, 빌라, 다가구 및 통원룸</option>
+                </select>
+
+                <label for="property-value">대상 담보 자산의 공시 가격 혹은 KB 예상 시세 (억 원 단위 기입)</label>
+                <input type="number" id="property-value" name="property_value" placeholder="예시: 7" min="0">
+
+                <label for="current-loans">현재 해당 물건에 설정된 기존 선순위 대출 총액 (만 원 단위)</label>
+                <input type="number" id="current-loans" name="current_loans" placeholder="예시: 15000" min="0">
+
+                <label for="monthly-income">해당 부동산에서 취득 중인 월 평균 임대 소득 (만 원)</label>
+                <input type="number" id="monthly-income" name="monthly_income" placeholder="예시: 120" min="0">
+
+                <label for="credit-score">신청인의 대략적인 개인 신용 등급 또는 신용 점수대 (KCB/NICE)</label>
+                <select id="credit-score" name="credit_score">
+                    <option value="unknown">잘 모름 (추후 기본 조회를 통해 확인)</option>
+                    <option value="excellent">우수함 (900점 이상 / 옛 1~2등급 수준)</option>
+                    <option value="good">양호함 (800점대 / 옛 3~4등급 수준)</option>
+                    <option value="fair">보통 수준 (700점대 / 옛 5~6등급 수준)</option>
+                    <option value="low">관리 필요 (600점 이하)</option>
+                </select>
+
+                <label for="loan-period">희망하시는 만기 상환 운용 방식</label>
+                <select id="loan-period" name="loan_period">
+                    <option value="one-year">1년 만기 일시 상환 (금리 요건 최저 선호)</option>
+                    <option value="multi-years">3년에서 5년 거치 후 일부 원금 분할 상환 방식</option>
+                    <option value="unspecified">전문 상담원에게 가장 유리한 추천 방식 배정 요구</option>
+                </select>
+
+                <label for="consult-time">편리하게 통화 가능한 안심 희망 상담 시간대</label>
+                <select id="consult-time" name="consult_time">
+                    <option value="anytime">언제든 상관 없음</option>
+                    <option value="morning">오전 일찍 (09:00 ~ 12:00)</option>
+                    <option value="afternoon">점심 시간 직후 오후 (13:00 ~ 16:00)</option>
+                    <option value="evening">퇴근 전후 늦은 오후 (16:00 ~ 18:30)</option>
+                </select>
+
+                <label for="extra-comments">기타 추가 요청 사안 혹은 과거 금융 이력상의 특이 사항 기재</label>
+                <textarea id="extra-comments" name="extra_comments" rows="5" placeholder="예시: 2026년 하반기 다주택자 만기 연장 제한과 관련해 RTI 완화 특약 조건이 적용 가능한지 세부적인 검토를 원합니다. 기존 대출을 저렴한 이자로 갈아타는 대환 상담도 병행 원합니다."></textarea>
+
+                <button type="submit" class="btn-cta" style="border: none; cursor: pointer;">비대면 한도 금리 맞춤형 무료 분석 신청</button>
+            </form>
+        </section>
+    </div>
+
+  
